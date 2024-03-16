@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Demo</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
+    <form action="/food">
+      <label for="userName">Kullanıcı Adı Giriniz:</label>
+      <input
+        type="text"
+        placeholder="Kullanıcı Adı"
+        id="userName"
+        name="userName"
+      />
+
+      <label for="userPassword">Şifre Giriniz:</label>
+      <input
+        type="password"
+        placeholder="Şifre"
+        id="userPassword"
+        name="userPassword"
+      />
+
+      <label for="userColor">Renk Seçiniz:</label>
+      <input type="color" id="userColor" name="userColor" />
+
+      <label for="userNumber">Sayı Giriniz</label>
+      <input
+        type="number"
+        placeholder="Sayı"
+        id="userNumber"
+        name="userNumber"
+      />
+
+      <button type="submit">Submit</button>
+      <input type="submit" />
+      <input type="submit" value="Gönder" />
+    </form>
+    <hr />
+    <form action="https://www.reddit.com/search/">
+      <label for="reddit">Reddit</label>
+      <input type="text" id="reddit" name="q" />
+      <button>Search Reddit</button>
+    </form>
+    <hr />
+    <form action="https://www.google.com/search/">
+      <label for="google">Google</label>
+      <input type="text" id="google" name="q" />
+      <button>Search Google</button>
+    </form>
+    <hr />
+    <form action="https://www.youtube.com/search/">
+        <label for="youtube">Youtube</label>
+        <input type="text" id="youtube" name="search_query" />
+        <button>Search Youtube</button>
+    </form>
+  </body>
+</html>
